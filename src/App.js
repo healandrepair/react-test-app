@@ -27,11 +27,17 @@ function App() {
     },
   ];
 
+
+  const addExpenseHandler = (expense) => {
+    console.log("in app.js");
+    console.log(expense)
+}
+
   return (
     <div className="App">
       <h2> Lets get started</h2>
       <p> this is also visible</p>
-      <NewExpense/>
+      <NewExpense onAddExpense={addExpenseHandler}/>
       <ExpenseData items={expenses}/> {/*items refers to the element being passed, its also the variable name*/}
 
     </div>

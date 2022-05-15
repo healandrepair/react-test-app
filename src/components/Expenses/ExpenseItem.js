@@ -11,13 +11,11 @@ function ExpenseItem(props) {
     const [count, setCount] = useState(0)
 
 
-    function clickHandler() {
+    function clickHandler(count) {
         setTitle('Updated');
         setCount(count+1)
         console.log(title)
         console.log(count)
-        
-        
     }
 
     return (
