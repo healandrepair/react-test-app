@@ -9,7 +9,7 @@ const DUMMY_EXPENSES = [
   {
     id: 'e1',
     title: 'Toilet Paper',
-    amount: 94.12,
+    amount: 54.12,
     date: new Date(2020, 7, 14),
   },
   { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
@@ -42,8 +42,8 @@ function App() {
 
   return (
     <div className="App">
-      <h2> Lets get started</h2>
-      <p> this is also visible</p>
+      <h2 style={{color: 'white', textAlign: "center"}}> Evan's Expenses List</h2>
+
       <NewExpense onAddExpense={addExpenseHandler}/>
       <ExpenseData items={expenses}/> {/*items refers to the element being passed, its also the variable name*/}
 
